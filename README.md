@@ -1,5 +1,5 @@
 # cs50
-All of my solutions to problem sets from Harvard's Introduction to Computer Science, available <a href="https://cs50.harvard.edu/x/2020/">here</a>.
+All of my solutions to problem sets from Harvard's Introduction to Computer Science, available <a href="https://cs50.harvard.edu/x/2020/" target="_blank">here</a>.
 
 <b>INDEX</b>
 
