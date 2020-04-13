@@ -53,7 +53,7 @@ All of my solutions to problem sets from Harvard's Introduction to Computer Scie
     houses/ rooster.py and import.py
       
    PSET 8
-    /language: html, css and javascript
+    /language: HTML, CSS and JavaScript
     
     homepage/ index.html change.html hello.html search.html  css/styles.css  js/ script.js change_script.js hello_script.js
     finance: coming soon
