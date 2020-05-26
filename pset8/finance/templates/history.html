@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">SYMBOL</th>
+          <th scope="col">SHARES</th>
+          <th scope="col">PRICE</th>
+          <th scope="col">TIME</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ lines|safe }}
+      </tbody>
+    </table>
+
+
+
+
+{% endblock %}

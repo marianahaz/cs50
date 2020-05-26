@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">SYMBOL</th>
+          <th scope="col">NAME</th>
+          <th scope="col">SHARES</th>
+          <th scope="col">PRICE</th>
+          <th scope="col">TOTAL</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ lines|safe }}
+      </tbody>
+    <tr class="table-light">
+        <td>CASH</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>{{ cashAvailable }}</td>
+    </tr>
+    <tr class="table-light">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <th>{{ grandTotal }}</th>
+    </tr>
+    </table>
+
+
+
+
+{% endblock %}
