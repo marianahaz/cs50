@@ -49,14 +49,14 @@ All of my solutions to problem sets from Harvard's Introduction to Computer Scie
    PSET 7
     /language: SQL and Python
     
-    movies/ 1 through 13.sql
-    houses/ rooster.py and import.py
+    movies/
+    houses/
       
-   PSET 8
+   <a href="https://cs50.harvard.edu/x/2020/tracks/web/" target="_blank">PSET 8</a>
     /language: HTML, CSS and JavaScript
     
-    homepage/ index.html change.html hello.html search.html  css/styles.css  js/ script.js change_script.js hello_script.js
-    finance: coming soon
+    homepage/
+    finance/
       
    FINAL PROJECT
       
