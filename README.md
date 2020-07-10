@@ -59,5 +59,6 @@ All of my solutions to problem sets from Harvard's Introduction to Computer Scie
     finance/
       
    FINAL PROJECT
+    /language: HTML, CSS, Javascript, Python and SQL
       
-    coming soon
+    final-project/
