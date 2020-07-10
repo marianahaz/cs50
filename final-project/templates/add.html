@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div class="add-character">
+            <p>Add a new character, word or sentence</p>
+            
+            <form method="POST" action="/add">
+                
+                <div class="select-list">
+                    <label for="list-select">Select a list:</label><select name="add-list" id="list-select">
+                        <!--option value="">--Select a list--</option-->
+                        {{ printLists|safe }}
+                    </select><p>To create a new list, go to <a href="/mylists">My Lists</a></p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="add-character">Character* <span class="required">(required)</span></label>
+                        <input required type="text" placeholder="e.g. 我" id="add-character" name="add-character">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="add-pinyin">Pinyin* <span class="required">(required)</span></label>
+                        <input required type="text" placeholder="e.g. wo3 or wǒ" id="add-pinyin" name="add-pinyin">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="add-translation">Translation* <span class="required">(required)</span></label>
+                        <input required type="text" placeholder="e.g. I, me" id="add-translation" name="add-translation">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="add-image">Image link</label>
+                        <input type="text" placeholder="e.g. https://kanji.jitenon.jp/shotai1/831.gif" id="add-image" name="add-image">
+                    </div>
+                </div>
+
+                {{ message|safe }}
+
+                <input type="submit" value="Add">
+            </form>
+
+        </div>
+
+{% endblock %}

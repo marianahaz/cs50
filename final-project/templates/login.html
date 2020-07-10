@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div class="login-page">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="login">
+                <p>Login</p>
+                <form action="/login" method="post">
+                    <label for="l-username">Username</label><input type="text" name="l-username" id="l-username">
+                    <label for="l-password">Password</label><input type="password" name="l-password" id="l-password">
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="col-md-6">
+            <div class="login">
+                <p>Register</p>
+                <form action="/register" method="post">
+                    <label for="r-username">Username</label><input type="text" name="r-username" id="r-username">
+                    <label for="r-password">Password</label><input type="password" name="r-password" id="r-password">
+                    <label for="r-confirmation">Password confirmation</label><input type="password" name="r-confirmation" id="r-confirmation">
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+{% endblock %}

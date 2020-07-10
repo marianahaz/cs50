@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div class="welcome-text">
+    <p>Hello! Thanks for using yiwi.</p>
+    <p>Still not sure where to begin? <a href="/about">Learn more</a>.</p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <p><img src="https://image.flaticon.com/icons/svg/1124/1124602.svg">Last added</p>
+            </div>
+            <div class="card-content last-added-list">
+                <ul>
+                    {{ printLastAdded|safe }}
+                </ul>
+
+                <a href="/mylists"><button>Go to My Lists</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <p><img src="https://image.flaticon.com/icons/svg/2948/2948094.svg">Find</p>
+            </div>
+            <div class="card-content center-card">
+                <form method="POST" action="/find">
+                    <input type="search" name="searchWord" placeholder="Search">
+                    <input type="submit" value="Find this!">
+                    <p>Remember: you can only find what you have already added in your lists.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <p><img src="https://image.flaticon.com/icons/svg/992/992651.svg">Add</p>
+            </div>
+            <div class="card-content center-card">
+                <form method="POST" action="/add">
+                    <label for="list-select">Select a list:</label><select name="add-list" id="list-select">
+                        {{ printLists|safe }}
+                    </select><p>To create a new list, go to <a href="#">My Lists</a></p>
+                    <input required type="text" placeholder="Character*" id="add-character" name="add-character">
+                    <input required type="text" placeholder="Pinyin*" id="add-pinyin" name="add-pinyin">
+                    <input required type="text" placeholder="Translation*" id="add-translation" name="add-translation">
+                    <!--input type="text" placeholder="Example sentence" id="add-sentence">
+                    <p>You can add more sentences afterwards on the word page</p-->
+                    <input type="text" placeholder="Image link" id="add-image" name="add-image">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

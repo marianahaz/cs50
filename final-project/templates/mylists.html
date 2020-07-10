@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div class="mylists">
+    <p>My Lists</p>
+
+    <form action="mylists" method="post">
+        <label>Create a new list: </label>
+        <input type="text" autocomplete="off" autofocus id="add-list-box" name="add-list" placeholder="List name">
+        <input type="submit" value="Add">
+    </form>
+
+</div>
+
+<div id="accordion">
+
+    {{ listName|safe }}
+
+    <!--div class="list-box">
+
+        <p>{{ listName|safe }}</p>
+      
+        <div class="list-box-header"><button class="list-button collapsed" data-toggle="collapse" data-target="#listname1">hsk2<span></span></button></div>
+  
+        <div id="listname1" class="collapse" data-parent="#accordion">
+            <div class="list-box-body">
+                <ul>
+                    <li>
+                        <div class="entry-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/de/Taylor_swift_me.jpg">
+                        </div>
+                        <div class="entry-info">
+                            <span class="character">我</span><br><span class="pinyin">wo3</span><br><span class="translation">I, me</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="entry-image">
+                            <img src="http://andrelegris.com/wp-content/uploads/2017/06/waterdorp.png">
+                        </div>
+                        <div class="entry-info">
+                            <span class="character">水</span><br><span class="pinyin">shui3</span><br><span class="translation">water</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="list-box">
+      
+        <div class="list-box-header"><button class="list-button collapsed" data-toggle="collapse" data-target="#listname2">LIST NAME<span></span></button></div>
+  
+        <div id="listname2" class="collapse" data-parent="#accordion">
+            <div class="list-box-body">
+                <ul>
+                    <li>
+                        <div class="entry-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/pt/d/de/Taylor_swift_me.jpg">
+                        </div>
+                        <div class="entry-info">
+                            <span class="character">我</span><br><span class="pinyin">wo3</span><br><span class="translation">I, me</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="entry-image">
+                            <img src="http://andrelegris.com/wp-content/uploads/2017/06/waterdorp.png">
+                        </div>
+                        <div class="entry-info">
+                            <span class="character">水</span><br><span class="pinyin">shui3</span><br><span class="translation">water</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div-->
+
+    
+
+    
+
+  </div>
+
+
+{% endblock %}

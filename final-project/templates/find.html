@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+
+<div class="search">
+    <p>Type the character, word or sentence that you are looking for to find all occurences of it in your lists.</p>
+    <p>Remember you can only find what you have already added to your lists.</p>
+    <form method="POST" action="/find">
+        <input type="search" name="searchWord" placeholder="Type here">
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+<div class="results">
+    {{ searchResults|safe }}
+    <ul>
+        {{ printResults|safe }}    
+    </ul>
+</div>
+
+{% endblock %}
