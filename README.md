@@ -1,6 +1,8 @@
 # cs50
 All of my solutions to problem sets from Harvard's Introduction to Computer Science, available <a href="https://cs50.harvard.edu/x/2020/">here</a>.
 
+<a href="https://certificates.cs50.io/7c6d724d-dca4-48e5-a806-54158e95a749.pdf?size=letter">Certificate</a>
+
 <b>INDEX</b>
 
   <a href="https://cs50.harvard.edu/x/2020/psets/1/">PSET 1</a>
